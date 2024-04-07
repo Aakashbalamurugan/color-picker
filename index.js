@@ -20,7 +20,9 @@ function generateOptions(targetColor) {
         if (i === correctColorIndex) {
             option.style.backgroundColor = targetColor;
             option.onclick = function() {
-                alert('Correct! Well done.');
+                if (level ==6) {
+                    alert("Congratulation, you won the game")
+                }
                 level++;
                 if (level % 3 === 0) {
                     numOptions = Math.max(3, numOptions - 1);
