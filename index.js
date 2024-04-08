@@ -22,6 +22,7 @@ function generateOptions(targetColor) {
             option.onclick = function() {
                 if (level ==6) {
                     alert("Congratulation, you won the game")
+                    newGame();
                 }
                 level++;
                 if (level % 3 === 0) {
